@@ -1,0 +1,60 @@
+.section_small {
+    flex: 1;
+    height: 270px;
+    cursor: pointer;
+}
+.section_gray {
+    background-color: #1B1B1F;
+}
+.img {
+    width: 100%;
+}
+.img_play {
+    animation: play 10s linear infinite forwards;
+    animation-play-state: running;
+}
+.animation_stop {
+    animation-play-state: paused;
+}
+.img_player {
+    position: absolute;
+    top: -60px;
+    right: -30px;
+    width: 100px;
+    transform-origin: 21px calc(100% - 21px);
+    
+}
+.img_player_turnOn {
+    animation: turnOn 0.5s ease-in-out forwards;
+
+}
+.img_player_turnOff {
+    animation: turnOff 0.5s ease-in-out forwards;
+}
+
+@keyframes turnOn {
+    0% {
+        transform: rotate(155deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes turnOff {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(155deg);
+    }
+}
+
+@keyframes play {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,14 @@
+#root {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+body {
+    background-color: black;
+}
+.content {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    max-width: 1440px;
+}

@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    flex: 1;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 80px;
+}
+.main_content {
+    flex-direction: column;
+    transition: 0.5s all;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.border {
+    transition: 0.1s all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 80px;
+}
+.container:hover > .border {
+    transform: translateX(-5px) translateY(-5px);
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 85px;
+}

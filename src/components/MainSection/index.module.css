@@ -1,0 +1,42 @@
+.section_main {
+    background-color: rgb(255, 125, 74);
+    height: 585px;
+    cursor: pointer;
+}
+.section_main_color {
+    animation: color 0.5s ease-in forwards;
+}
+.section_main:hover > * > .section_main_content_img {
+    transform: translateY(35deg);
+    animation: arrow 0.2s ease-in infinite;
+}
+.section_main_content_img {
+    transition: 0.5s all;
+}
+.section_main_content_text {
+    position: absolute;
+    bottom: 35px;
+    left: min(10%, 55px);
+    font-size: 40px;
+    font-family: Aclonica;
+    color: black;
+    margin: 0;
+}
+@keyframes arrow {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(150%);
+    }
+}
+@keyframes color {
+    0% {
+        background-color: rgb(255, 125, 74);
+    }
+
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
+}

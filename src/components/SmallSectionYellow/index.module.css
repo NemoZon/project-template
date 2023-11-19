@@ -1,0 +1,21 @@
+.title {
+    margin: 0;
+    color: black;
+    font-size: 128px;
+    font-family: Aclonica;
+}
+.subtitle {
+    transform: translateY(23px);
+    margin: 0;
+    color: black;
+    font-size: 40px;
+    font-family: Aclonica;
+}
+.section_small {
+    flex: 1;
+    height: 270px;
+    cursor: pointer;
+}
+.section_yellow {
+    background-color: #FFF85A;
+}

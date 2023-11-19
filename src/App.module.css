@@ -1,0 +1,19 @@
+.sections {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.sections > * {
+    flex: 1;
+}
+.img {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    z-index: -10;
+}
+.title {
+    color: white;
+    font-size: 128px;
+    font-family: Aclonica;
+}

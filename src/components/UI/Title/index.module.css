@@ -1,0 +1,13 @@
+.title {
+    color: white;
+    font-size: 128px;
+    font-family: Aclonica;
+    margin: 0;
+}
+.subtitle {
+    color: white;
+    font-size: 64px;
+    font-family: Aclonica;
+    transform: translateY(-0.27em);
+    margin: 0;
+}

@@ -1,5 +1,6 @@
 .sections {
     display: flex;
+    justify-content: center;
     gap: 15px;
     width: 100%;
 }
@@ -17,3 +18,14 @@
     font-size: 128px;
     font-family: Aclonica;
 }
+.container {
+    display: flex;
+}
+ @media (max-width: 1250px) {
+    .sections {
+        flex-direction: column-reverse;
+    }
+    .container {
+        flex-direction: column;
+    }
+ }

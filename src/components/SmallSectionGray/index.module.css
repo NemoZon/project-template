@@ -58,3 +58,9 @@
         transform: rotate(360deg);
     }
 }
+@media (480px < width < 1250px) {
+    .img_player {
+        display: none;
+        
+    }
+}

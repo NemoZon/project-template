@@ -8,13 +8,22 @@
 .text {
     margin: 0;
     color: white;
-    font-size: 18px;
+    font-size: min(4vw, 18px);
     font-family: Aclonica;
 }
 .small {
     position: absolute;
     bottom: 5px;
     color: white;
-    font-size: 12px;
+    font-size: min(3vw, 12px);
     font-family: Aclonica;
 }
+@media (max-width: 1250px) {
+    .section_middle {
+        padding: 80px 35px;
+    }
+    .small {
+        max-width: 80%;
+        bottom: 25px;
+    }
+ }

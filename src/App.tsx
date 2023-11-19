@@ -34,7 +34,7 @@ function App() {
             />
           )}
           <div className='d-flex flex-column gap-2'>
-            <div className='d-flex gap-2'>
+            <div className={`gap-2 ${classes.container}`}>
               <SmallSectionYellow />
               <SmallSectionGray />
             </div>

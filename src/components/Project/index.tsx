@@ -3,7 +3,7 @@ import classes from './index.module.css';
 export function Project() {
   const [activeButton, setActiveButton] = useState('Add');
   return (
-    <div className='d-flex gap-5 justify-content-center' style={{ minHeight: '620px' }}>
+    <div className={`gap-3 ${classes.container}`}>
       {activeButton === 'Add' ? (
         <video width='300' autoPlay muted loop>
           <source src={`assets/videos/Add.mp4`} type='video/mp4' />
@@ -36,7 +36,7 @@ export function Project() {
       ) : (
         ''
       )}
-      <div className='d-flex flex-column h-100 justify-content-evenly'>
+      <div className={`${classes.btn_container}`}>
         <button
           className={`btn d-flex flex-column align-items-center justify-content-center ${
             classes.btn

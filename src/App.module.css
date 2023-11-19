@@ -28,4 +28,7 @@
     .container {
         flex-direction: column;
     }
+    .sections {
+        padding-bottom: 60px;
+    }
  }
